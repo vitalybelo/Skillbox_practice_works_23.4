@@ -1,5 +1,4 @@
 #include <iostream>
-#include "windows.h"
 using namespace std;
 
 #define SUMMER 1
@@ -7,12 +6,10 @@ using namespace std;
 #define WINTER 3
 #define SPRING 4
 
-#define ACTIVE_SEASON SUMMER
+#define ACTIVE_SEASON 0 //SUMMER
 
 int main() {
 #if ACTIVE_SEASON <= 4 && ACTIVE_SEASON > 0
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "Russian");
 
 #if ACTIVE_SEASON == SUMMER
