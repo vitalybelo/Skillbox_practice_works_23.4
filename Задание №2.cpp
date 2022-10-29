@@ -6,7 +6,7 @@ using namespace std;
 #define WINTER 3
 #define SPRING 4
 
-#define ACTIVE_SEASON 0 //SUMMER
+#define ACTIVE_SEASON AUTUMN
 
 int main() {
 #if ACTIVE_SEASON <= 4 && ACTIVE_SEASON > 0

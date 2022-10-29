@@ -7,7 +7,7 @@ using namespace std;
 #define WINTER 3
 #define SPRING 4
 
-#define ACTIVE_SEASON SUMMER
+#define ACTIVE_SEASON AUTUMN
 
 int main() {
 #if ACTIVE_SEASON <= 4 && ACTIVE_SEASON > 0
@@ -16,13 +16,13 @@ int main() {
     setlocale(LC_ALL, "Russian");
 
 #if ACTIVE_SEASON == SUMMER
-    cout << "Ð›ÐµÑ‚Ð¾" << endl;
+    cout << "Ëåòî" << endl;
 #elif ACTIVE_SEASON == AUTUMN
-    cout << "ÐžÑÐµÐ½ÑŒ" << endl;
+    cout << "Îñåíü" << endl;
 #elif ACTIVE_SEASON == WINTER
-    cout << "Ð—Ð¸Ð¼Ð°" << endl;
+    cout << "Çèìà" << endl;
 #else ACTIVE_SEASON == SPRING
-    cout << "Ð’ÐµÑÐ½Ð°" << endl;
+    cout << "Âåñíà" << endl;
 #endif
 #endif
     return 0;
