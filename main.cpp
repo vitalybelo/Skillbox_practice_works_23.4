@@ -9,8 +9,8 @@ using namespace std;
 
 #define ACTIVE_SEASON AUTUMN
 
-int main() {
 #if ACTIVE_SEASON <= 4 && ACTIVE_SEASON > 0
+int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "Russian");
@@ -24,6 +24,6 @@ int main() {
 #else ACTIVE_SEASON == SPRING
     cout << "Весна" << endl;
 #endif
-#endif
     return 0;
 }
+#endif
