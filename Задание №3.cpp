@@ -45,6 +45,5 @@ int main()
     cout << "Оптимально загруженных вагонов: " << optimalWagons << endl;
     cout << "Общее количество пассажиров в поезде = " << sum << endl;
 
-    system("pause");
     return 0;
 }
