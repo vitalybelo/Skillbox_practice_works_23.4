@@ -18,7 +18,8 @@ bool solveWagonPuzzle (int nPassengers) {
     return nPassengers > OPTIMAL_CAPACITY;
 }
 
-#define WAGON_DATA(nw, po) \
+#define WAGON_DATA(nw) \
+                int i = 1; \
                 while (i <= nw) { \
                     int pn = getWagonOccupancy(i++); \
                     if (isWagonOptimal(pn)) { \
@@ -33,13 +34,12 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    int i = 1;
     int sum = 0;
     int optimalWagons = 0;
     int overcookedWagons = 0;
     int unfinishedWagons = 0;
 
-    WAGON_DATA(10, OPTIMAL_CAPACITY);
+    WAGON_DATA(10);
     cout << "Перегруженных вагонов: " << overcookedWagons << endl;
     cout << "Недогруженных вагонов: " << unfinishedWagons << endl;
     cout << "Оптимально загруженных вагонов: " << optimalWagons << endl;
